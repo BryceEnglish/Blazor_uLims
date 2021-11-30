@@ -1,0 +1,24 @@
+﻿<div class="chart">
+    <h3>FG Tracking</h3>
+    <RadzenChart>
+        <RadzenColumnSeries Data="@invoices" CategoryProperty="Status" ValueProperty="InvoiceCount" Fill="#84d42c" />
+    </RadzenChart>
+</div>
+
+
+
+
+@code {
+    class DataItem
+    {
+        public string Status { get; set; }
+        public double InvoiceCount { get; set; }
+    }
+
+    DataItem[] invoices = new DataItem[]
+    {
+
+        new DataItem { Status = "Actual", InvoiceCount = 141 },
+        new DataItem { Status = "Scheduled", InvoiceCount = 153 }
+    };
+}

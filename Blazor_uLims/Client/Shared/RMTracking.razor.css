@@ -1,0 +1,11 @@
+﻿body {
+}
+
+.chart {
+    height: auto;
+    width: auto;
+    border: 1px solid lightgray;
+    border-radius: 3px;
+    background: none;
+    box-shadow: -7px 7px 5px 0px rgba(0,0,0,0.15);
+}
